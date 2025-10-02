@@ -1,0 +1,13 @@
+
+<ul>
+    @for (movie of mService.movies; track $index) {
+
+        <li>
+            <a [routerLink]="movie.name">
+                <h3> {{ movie.name }} </h3>
+                <h5> {{ movie.duration }} </h5>
+            </a>
+        </li>
+    }
+</ul>
+

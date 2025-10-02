@@ -1,0 +1,9 @@
+<h1>Tus favoritos:  </h1>
+
+<ul>
+    @for (movie of mService.movies; track $index) {
+        <li>
+            <h3> {{ movie.name }} </h3>
+        </li>
+    }
+</ul>
